@@ -1,0 +1,41 @@
+name: Build Windows Binaries
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4.2.2
+
+    - name: Build dlchelper
+      run: |
+        cd dlchelper
+        cargo build --release
+      shell: bash
+
+    - name: Build ctrdecrypt
+      run: |
+        cd ctrdecrypt
+        cargo build --release
+      shell: bash
+
+    - name: Upload dlchelper artifact
+      uses: actions/upload-artifact@v4.6.1
+      with:
+        name: dlchelper
+        path: dlchelper/target/release/dlchelper.exe
+
+    - name: Upload ctrdecrypt artifact
+      uses: actions/upload-artifact@v4.6.1
+      with:
+        name: ctrdecrypt
+        path: ctrdecrypt/target/release/ctrdecrypt.exe
