@@ -1,20 +1,22 @@
-# Batch CIA 3DS Decryptor
-Batch decrypting for Nintendo 3DS games and applications (.3ds, .cia).
+# Batch CIA CCI Decryptor
+Batch decrypting for Nintendo 3DS games and applications (.3ds|.cci, .cia).
 
-Batch CIA 3DS Decryptor is a rewritten version of the Batch CIA 3DS Decryptor by matiffeder.
+Azahar makes use of the `.cci` extension, which is the true name of the format used by `.3ds` files.
+
+Batch CIA CCI Decryptor is a rewritten version of the Batch CIA 3DS Decryptor by matiffeder.
 
 Original thread: https://gbatemp.net/threads/batch-cia-3ds-decryptor-a-simple-batch-file-to-decrypt-cia-3ds.512385/
 
 ## Features
-* DLC/Patch CIA > Decrypted CIA, able to install in Citra
+* DLC/Patch CIA > Decrypted CIA, able to install in Azahar
 * 3DS Games > Decrypted and trimmed 3DS, so it is smaller
 * CIA Games > Decrypted CCI (NCSD), not CXI (NCCH)
 * Auto dectect CIA type (DLC/Patch/Game)
 
 ## Usage
 * Copy CIA or 3DS files into the root directory containing the batch
-* Run "Batch CIA 3DS Decryptor.bat"
-* Run "Batch CIA 3DS Decryptor [Debug].bat" will show command and output logfile
+* Run "Batch CIA CCI Decryptor.bat"
+* Run "Batch CIA CCI Decryptor [Debug].bat" will show command and output logfile，without checking whether the files are encrypted
 
 ## Supported operating systems
 * Windows 10 x64 or higher
