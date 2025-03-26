@@ -43,7 +43,7 @@ for %%a in (*.cia) do (
     set CUTN=%%~na
     if /i x!CUTN!==x!CUTN:decrypted=! (
         :: 提取内容信息
-        bin\ctrtool "%%a" > content.txt
+        bin\ctrtool --seeddb=bin\seeddb.bin "%%a" > content.txt
         set FILE="content.txt"
 
         :: 解密 .cia 文件

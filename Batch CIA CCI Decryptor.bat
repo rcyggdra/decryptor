@@ -13,7 +13,7 @@ del /q *.ncch >nul 2>&1
 for %%a in (*.3ds *.cci) do (
     set CUTN=%%~na
     if /i x!CUTN!==x!CUTN:decrypted=! (
-        bin\ctrtool "%%a" > content.txt
+        bin\ctrtool --seeddb=bin\seeddb.bin "%%a" > content.txt
         set FILE="content.txt"
 
         :: 检查是否已解密，如果找到则跳过处理
@@ -44,7 +44,7 @@ for %%a in (*.3ds *.cci) do (
 for %%a in (*.cia) do (
     set CUTN=%%~na
     if /i x!CUTN!==x!CUTN:decrypted=! (
-        bin\ctrtool "%%a" > content.txt
+        bin\ctrtool --seeddb=bin\seeddb.bin "%%a" > content.txt
         set FILE="content.txt"
 
         :: 检查是否已解密，如果找到则跳过处理
