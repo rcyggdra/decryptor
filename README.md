@@ -25,5 +25,5 @@ Original thread: https://gbatemp.net/threads/batch-cia-3ds-decryptor-a-simple-ba
 * `Batch CIA 3DS Decryptor` - [matiffeder](https://github.com/matiffeder/3DS-stuff)
 * `CTRTool.exe/MakeROM.exe` - [3DSGuy](https://github.com/3DSGuy/Project_CTR)
 * `seeddb.bin` - [ihavamac](https://github.com/ihaveamac/3DS-rom-tools/tree/master/seeddb)
-* `ctrdecrypt` - [shijimasoft](https://github.com/shijimasoft/ctrdecrypt)
+* `ctrdecrypt` - [shijimasoft](https://github.com/shijimasoft/ctrdecrypt) & [R-YaTian](https://github.com/R-YaTian/ctrdecrypt)
 * `dlchelper` - [R-YaTian](https://github.com/R-YaTian/3DS-Converters/tree/master/dlchelper)
