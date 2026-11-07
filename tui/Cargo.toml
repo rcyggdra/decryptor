@@ -1,0 +1,18 @@
+[package]
+name = "decryptor-tui"
+version = "0.1.0"
+edition = "2021"
+description = "Batch CIA/CCI 3DS decryptor with a TUI (linux native)"
+license = "MIT"
+
+[[bin]]
+name = "decryptor-tui"
+path = "src/main.rs"
+
+[dependencies]
+ctrdecrypt = { path = "../ctrdecrypt" }
+ratatui = "0.29"
+crossterm = "0.28"
+anyhow = "1.0"
+attohttpc = { version = "0.28", default-features = false, features = ["rustls"] }
+log = "0.4"

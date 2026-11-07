@@ -11,7 +11,8 @@ hex-literal="0.3.3"
 aes = "0.8.4"
 cbc = {version ="0.1.2", features = ["std"]}
 sha256 = "1.4.0"
-attohttpc = "0.28.0"
+# rustls instead of the default TLS so the build doesn't need libssl on linux
+attohttpc = { version = "0.28.0", default-features = false, features = ["rustls"] }
 block-padding = "0.3.3"
 ctr = "0.9.2"
 byteorder = "1.5.0"
